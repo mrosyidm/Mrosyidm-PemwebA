@@ -1,0 +1,64 @@
+<!DOCTYPE>
+<html>
+<head>
+<style type="text/css">    
+.form-all {
+	background: #00b5e9;	
+  width: 400px;
+  margin:10px auto;              
+  font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, sans-serif;        
+    }
+.form-textbox {
+	border-radius: 10px;
+	height: 20px;
+    }
+.form-submit-button {
+  border: solid;
+	margin-top: 10px;
+	font-size: 19px;
+}
+</style>
+</head>
+<body>
+<form action="hasilvolume.php" method="post" name="isivolume" accept-charset="utf-8">  
+  <div class="form-all">
+    <ul>            
+      <div id="judul" style="font-size: 19px;">
+          <p>Menghitung Volume <br>Prisma Segitiga</p>
+      </div>      
+      <li data-type="control_textbox">
+        <label>
+          Tinggi Prisma
+        </label>
+        <div>
+          <input type="text" name="tp" data-type="input-textbox" class="form-textbox" size="27" value="" placeholder="Masukkan Tinggi Prisma" required="" />
+        </div>
+      </li>
+      <li>
+        <label>
+          Tinggi Segitiga
+        </label>
+        <div>
+          <input type="text" name="ts" class="form-textbox" size="27" value="" placeholder="Masukkan Tinggi Segitiga" required="" />
+        </div>
+      </li>
+      <li>
+        <label>
+          Alas Segitiga
+        </label>
+        <div>
+          <input type="text" name="as" class="form-textbox" size="27" value="" placeholder="Masukkan Alas Segitiga" required="" />
+        </div>
+      </li>      
+        <div>
+          <div style="text-align:center; width: 200px;">
+            <button type="submit" name="submit" class="form-submit-button">
+              Hitung Volume Prisma Segitiga 
+            </button>
+          </div>
+        </div>
+    </ul>
+  </div>
+</form>
+</body>
+</html>
